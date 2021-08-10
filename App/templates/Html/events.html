@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static '/CSS/events.css' %}" rel='stylesheet' />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+        <div class="header-logo">
+            <img scr =""/>
+        </div>
+            <ul class = "header-menu">
+                <li class="header-item"><a class = "header-link" href ="/main"> о нас</a></li>
+                <li class="header-item"><a class = "header-link" href ="/events">события</a></li>
+                <li class="header-item"><a class = "header-link" href ="#">услуги</a></li>
+                <li class="header-item"><a class = "header-link" href ="/news">новости</a></li>
+                <li class="header-item"><a class = "header-link" href ="/contacts">контакты</a></li>
+    </ul>
+    </header>
+
+<div class="content">
+    {% for event in Events %}
+        {{ event.created_at }}
+    {{ event.text | safe }}
+
+
+{% endfor %}
+
+{% block content %}
+  ...
+  {% include  'Html/pagination.html' with page=Events %}
+{% endblock %}
+
+    </div>
+
+     <footer class = "footer">
+        <div class="footer-contacts">
+            <h3>Контакты:</h3>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+        </div>
+        <div class="footer-social">
+            <img src="{% static '/img/logos.png' %}"/>
+        </div>
+
+
+
+
+
+
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

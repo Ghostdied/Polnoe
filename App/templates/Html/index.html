@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static '/CSS/index.css' %}" rel='stylesheet' />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-logo">
+            <img scr =""/>
+        </div>
+            <ul class = "header-menu">
+                <li class="header-item"><a class = "header-link" href ="/main"> о нас</a></li>
+                <li class="header-item"><a class = "header-link" href ="/events">события</a></li>
+                <li class="header-item"><a class = "header-link" href ="#">услуги</a></li>
+                <li class="header-item"><a class = "header-link" href ="/news">новости</a></li>
+                <li class="header-item"><a class = "header-link" href ="/contacts">контакты</a></li>
+    </ul>
+    </header>
+    <content class = "content">
+        <div class="content-poster poster">
+            <div class="poster-text">мы знаем,<br> на что вы имеете<br> полное право</div>
+        </div>
+        <div class="content-description">Полное право – это команда профессионалов с многолетним успешным опытом оказания юридических услуг для бизнеса: создание и ликвидация, корпоративное право, взыскание задолженности, договорная работа, консалтинг, работа с государственными органами, разработка любых документов и др.
+Мы готовы качественно и оперативно помочь Вам в решении сложных задач. 24/7.</div>
+        <div class="content-advantages advantages">
+            <div class="advantages-block">
+                <img class = "advantages-image" src="{% static '/img/lists.png' %}">
+                <p class = "advantages-text">тысячи<br>  подготовленных<br>  документов<br></p>
+            </div>
+            <div class="advantages-block">
+                <img class = "advantages-image" src="{% static '/img/exchange.png' %}">
+                <p class = "advantages-text">сотни<br> реорганизаций</p>
+            </div>
+            <div class="advantages-block">
+                <img class = "advantages-image" src="{% static '/img/like.png' %}">
+                <p class = "advantages-text">более ста<br>  довольных<br> клиентов</p>
+            </div>
+        </div>
+    </content>
+    <footer class = "footer">
+        <div class="footer-contacts">
+            <h3>Контакты:</h3>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+            <p class = "contacts-number">+XXXXXXXXXXXX</p>
+        </div>
+        <div class="footer-social">
+            <img src="{% static '/img/logos.png' %}"/>
+        </div>
+
+
+
+
+
+
+    </footer>
+</div>
+
+</body>
+</html>
